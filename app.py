@@ -30,7 +30,7 @@ session = Session(engine)
 # Define app fro Flask
 app = Flask(__name__)
 
-import app 
+#import app 
 
 print("example __name__ = %s", __name__)
 
@@ -54,7 +54,8 @@ def welcome():
     /api/v1.0/temps/start/end
     ''')
 
-Flask run 
+if __name__ == '__main__':
+    app.run()
 #@app.route("/api/v1.0/precipitation")
 #def precipitation():
     #prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
